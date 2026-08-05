@@ -1,0 +1,91 @@
+{
+  "sensor": "Intel RealSense D435i",
+  "alignment": {
+    "method": "RealSense SDK alignment procedure",
+    "target_frame": "RGB camera frame",
+    "depth_aligned_to_rgb": true,
+    "released_depth_maps_are_pre_aligned": true
+  },
+  "rgb_camera_intrinsics": {
+    "width": 640,
+    "height": 480,
+    "fx": 605.1781616210938,
+    "fy": 604.431640625,
+    "cx": 323.7010192871094,
+    "cy": 245.1345977783203,
+    "distortion_model": "distortion.inverse_brown_conrady",
+    "distortion_coefficients": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "depth_camera_intrinsics": {
+    "width": 640,
+    "height": 480,
+    "fx": 384.45135498046875,
+    "fy": 384.45135498046875,
+    "cx": 321.5693664550781,
+    "cy": 238.25274658203125,
+    "distortion_model": "distortion.brown_conrady",
+    "distortion_coefficients": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "depth_to_rgb_extrinsics": {
+    "rotation_matrix": [
+      [
+        0.9998921751976013,
+        -0.013893223367631435,
+        -0.0047513749450445175
+      ],
+      [
+        0.013887728564441204,
+        0.9999028444290161,
+        -0.0011875659693032503
+      ],
+      [
+        0.004767412319779396,
+        0.0011214520782232285,
+        0.9999880194664001
+      ]
+    ],
+    "translation_m": [
+      0.01475139707326889,
+      -0.00013490095443557948,
+      3.149444819428027e-05
+    ]
+  },
+  "depth_format": {
+    "unit": "meter",
+    "depth_scale": 0.0010000000474974513,
+    "valid_depth_range_m": [
+      0.1,
+      10.0
+    ],
+    "invalid_depth_policy": "Missing, invalid, non-finite, or out-of-range depth values are excluded from metric computation."
+  },
+  "image_resolution": {
+    "original_rgb_resolution": [
+      640,
+      480
+    ],
+    "original_depth_resolution": [
+      640,
+      480
+    ],
+    "evaluation_input_resolution": [
+      640,
+      192
+    ]
+  },
+  "calibration_source": {
+    "source": "Intel RealSense SDK"
+  }
+}
