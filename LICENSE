@@ -1,0 +1,29 @@
+AS-Mono License Statement
+
+Copyright (c) 2026 AS-Mono Authors.
+
+AS-Mono is released for non-commercial research and educational purposes only.
+
+Permission is granted to use, copy, modify, and evaluate AS-Mono for non-commercial
+academic research and educational purposes only, provided that the copyright notice,
+this license statement, and any applicable third-party license notices are retained.
+ 
+Redistribution of AS-Mono, in original or modified form, is permitted only for
+non-commercial research and educational purposes.
+
+This repository contains original contributions developed by the AS-Mono authors,
+including the adaptive structural distillation strategy, UAV-oriented evaluation pipeline, 
+deployment scripts for Jetson Orin NX, and associated configuration files.
+
+Parts of this project are inspired by, adapted from, or built upon the publicly
+available Monodepth2 implementation. Where files, modules, or components are
+derived from Monodepth2, they remain subject to the original Monodepth2 license
+and copyright terms. Users must comply with the Monodepth2 license when using, modifying, or
+redistributing such components.
+
+Commercial use of AS-Mono, or of any components derived from Monodepth2, is not
+permitted without obtaining appropriate permission from the corresponding copyright
+holders.
+
+The software is provided for academic research and educational use only, without
+warranty of any kind, express or implied.
