@@ -1,0 +1,51 @@
+{
+  "dataset_name": "UAV RGB-D test set",
+  "sensor": "Intel RealSense D435i",
+  "platform": "P230 UAV",
+  "num_rgbd_pairs": 1000,
+  "scene_count": 1,
+  "scene_type": "indoor UAV flight arena",
+  "original_resolution": {
+    "rgb": [640, 480],
+    "depth": [640, 480]
+  },
+  "evaluation_input_resolution": [640, 192],
+  "lighting": "uniform artificial overhead illumination",
+  "motion_patterns": [
+    "forward motion",
+    "hovering",
+    "turning"
+  ],
+  "object_categories": [
+    "boxes",
+    "unmanned vehicles",
+    "aerial hoops",
+    "artificial trees",
+    "walls",
+    "ground surfaces",
+    "moving pedestrians"
+  ],
+  "dynamic_objects_included": true,
+  "depth_alignment": {
+    "aligned_to": "RGB image",
+    "method": "RealSense SDK alignment procedure",
+    "released_depth_maps_are_pre_aligned": true
+  },
+  "depth_format": {
+    "unit": "meter",
+    "valid_range_m": [0.1, 10.0],
+    "invalid_depth_policy": "Missing, invalid, non-finite, or out-of-range depth values are excluded from metric computation."
+  },
+  "calibration_files": {
+    "calibration_description": "calibration_and_alignment.md",
+    "calibration_parameters": "calibration.json"
+  },
+  "data_usage": {
+    "used_for_training": false,
+    "used_for_validation": false,
+    "used_for_hyperparameter_tuning": false,
+    "used_for_model_selection": false,
+    "used_for_testing": true
+  },
+  "usage_policy": "The UAV RGB-D data are used only for testing real-world generalization and are not used for training, validation, hyperparameter tuning, or model selection."
+}
